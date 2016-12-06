@@ -2,6 +2,16 @@
 ###### Jonathan Ahrens  
 General Assembly, 2016  
 
+### User story
+
+### Wireframes
+
+### Technologies
+- [ ] Node.js
+- [ ] Express.js
+- [ ] React.js
+- [ ] Heroku
+
 
 ###### Coffee Cups Consumed per day
 Day | Coffee
