@@ -24,7 +24,7 @@ Create Page
 ![create](./images/readme/create.jpg)
 
 User History
-![history](./images/readme/history.jpg)
+![history](./images/readme/History.jpg)
 
 
 
