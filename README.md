@@ -23,6 +23,9 @@ Home Page
 Create Page
 ![create](./images/readme/create.jpg)
 
+User History
+![history](./images/readme/history.jpg)
+
 
 
 
@@ -39,11 +42,12 @@ Create Page
 ### Timeframe
 ##### Wed, Dec 7
 - [ ] Hackathon
-- [ ] Webpack
+- [ ] Read up on React Router
 
 ##### Thu, Dec 8
 - [ ] Hackathon
 - [ ] Server setup
+- [ ] Routes
 
 ##### Fri, Dec 9
 - [ ] Webpack
@@ -51,10 +55,20 @@ Create Page
 
 ##### Sat, Dec 10
 - [ ] Component Creation
-- [ ]
+- [ ] Styling
 
 ##### Sun, Dec 11
-##### Sun, Dec 11
+- [ ] PSQL
+- [ ] Models
+
+##### Mon, Dec 12
+- [ ] More Stuff
+
+##### Tue, Dec 11
+- [ ] Even more Stuff
+
+##### Wed, Dec 11
+- [ ] Burn the house down.
 
 
 
@@ -62,4 +76,4 @@ Create Page
 Day | Coffee
 :---: | :---
 Mon Dec 5, 2016 | ☕☕☕☕☕☕☕
-Tue Dec 6, 2016 | ☕☕☕☕☕
+Tue Dec 6, 2016 | ☕☕☕☕☕☕
