@@ -47,9 +47,9 @@ User History
 - [x] Hackathon
 - [x] NPM init, package.json
 - [x] .gitignore
-- [ ] Basic server setup
-- [ ] Server setup
-- [ ] Webpack
+- [x] Basic server setup
+- [x] Server setup
+- [x] Webpack
 - [ ] Read up on React Router
 
 ##### Fri, Dec 9
