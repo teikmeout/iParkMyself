@@ -30,27 +30,31 @@ User History
 
 
 ### Technologies
-- [ ] Node.js
-- [ ] Javascript
-- [ ] Express.js
+- [x] Node.js
+- [x] Javascript
+- [x] Express.js
 - [ ] React.js
 - [ ] Heroku
-- [ ] React
+- [ ] React Router
 - [ ] WebPack
 - [ ] OCR (maybe overshooting)
 
 ### Timeframe
 ##### Wed, Dec 7
-- [ ] Hackathon
-- [ ] Read up on React Router
+- [x] Hackathon
 
 ##### Thu, Dec 8
-- [ ] Hackathon
+- [x] Hackathon
+- [x] NPM init, package.json
+- [x] .gitignore
+- [ ] Basic server setup
 - [ ] Server setup
-- [ ] Routes
+- [ ] Webpack
+- [ ] Read up on React Router
 
 ##### Fri, Dec 9
-- [ ] Webpack
+- [ ] Routes
+- [ ] Models, CRUD and PSQL
 - [ ] React Router
 
 ##### Sat, Dec 10
@@ -62,6 +66,8 @@ User History
 - [ ] Models
 
 ##### Mon, Dec 12
+- [ ] OCR
+- [ ] Amazon Web Services
 - [ ] More Stuff
 
 ##### Tue, Dec 11
@@ -77,3 +83,5 @@ Day | Coffee
 :---: | :---
 Mon Dec 5, 2016 | ☕☕☕☕☕☕☕
 Tue Dec 6, 2016 | ☕☕☕☕☕☕
+Wed Dec 7, 2016 | ☕☕☕☕☕
+Thu Dec 8, 2016 | ☕☕☕
