@@ -36,7 +36,7 @@ User History
 - [ ] React.js
 - [ ] Heroku
 - [ ] React Router
-- [ ] WebPack
+- [x] WebPack
 - [ ] OCR (maybe overshooting)
 
 ### Timeframe
