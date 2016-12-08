@@ -17,3 +17,7 @@ const PORT = process.argv[2] || process.env.PORT || 3000;
 
 // setting the server to listen on PORT
 app.listen(PORT, () => console.log(`proyecturune on ${PORT}`))
+
+// setting up routes
+const homeRoute = require('./routes/home');
+app.use('/', homeRoute);
