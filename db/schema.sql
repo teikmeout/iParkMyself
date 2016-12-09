@@ -20,14 +20,14 @@ CREATE TABLE leases (
   latitude VARCHAR NOT NULL,
   longitude VARCHAR NOT NULL,
   duration INT NOT NULL,
-  timestamp NOT NULL DEFAULT localtimestamp
+  time_stuff timestamp NOT NULL
 );
 
 CREATE TABLE payments (
   pay_id SERIAL NOT NULL,
   user_id INT NOT NULL,
   lease_id INT NOT NULL,
-  timestamp NOT NULL DEFAULT localtimestamp
+  time_stuff timestamp NOT NULL
 );
 
 COMMIT;
