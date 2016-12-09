@@ -79,10 +79,10 @@ User History
 
 
 ###### Coffee Cups Consumed per day
-Day | Coffee
-:---: | :---
-Mon Dec 5, 2016 | ☕☕☕☕☕☕☕
-Tue Dec 6, 2016 | ☕☕☕☕☕☕
-Wed Dec 7, 2016 | ☕☕☕☕☕
-Thu Dec 8, 2016 | ☕☕☕☕
-Fri Dec 9, 2016 | ☕☕
+Day | Coffee | RedBull
+:---: | :---: | ---
+Mon Dec 5, 2016 | ☕☕☕☕☕☕☕ | ⚡
+Tue Dec 6, 2016 | ☕☕☕☕☕☕ |
+Wed Dec 7, 2016 | ☕☕☕☕☕ |
+Thu Dec 8, 2016 | ☕☕☕☕ |⚡
+Fri Dec 9, 2016 | ☕☕☕☕ |
