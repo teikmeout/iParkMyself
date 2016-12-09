@@ -50,11 +50,11 @@ User History
 - [x] Basic server setup
 - [x] Server setup
 - [x] Webpack
-- [ ] Read up on React Router
 
 ##### Fri, Dec 9
-- [ ] Routes
 - [ ] Models, CRUD and PSQL
+- [ ] Read up on React Router
+- [ ] Routes
 - [ ] React Router
 
 ##### Sat, Dec 10
@@ -84,4 +84,5 @@ Day | Coffee
 Mon Dec 5, 2016 | ☕☕☕☕☕☕☕
 Tue Dec 6, 2016 | ☕☕☕☕☕☕
 Wed Dec 7, 2016 | ☕☕☕☕☕
-Thu Dec 8, 2016 | ☕☕☕
+Thu Dec 8, 2016 | ☕☕☕☕
+Fri Dec 9, 2016 | ☕☕
