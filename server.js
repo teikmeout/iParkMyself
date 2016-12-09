@@ -21,5 +21,7 @@ app.listen(PORT, () => console.log(`proyecturune on ${PORT}`))
 // setting up routes
 const homeRoute = require('./routes/home');
 const usersRoute = require('./routes/users');
+const leasesRoute = require('./routes/leases');
 app.use('/users', usersRoute);
+app.use('/leases', leasesRoute);
 app.use('/', homeRoute);
