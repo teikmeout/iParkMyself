@@ -11,5 +11,5 @@ import './index.css';
 
 ReactDOM.render(
   <App />,
-  docuemnt.querySelector('#root-container')
+  document.querySelector('#root-container')
 );
