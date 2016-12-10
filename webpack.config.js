@@ -34,7 +34,7 @@ const config = {
     //   },
     // }),
     new HtmlWebpackPlugin({
-      title: 'reAsk',
+      title: 'iParkMySelf',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
