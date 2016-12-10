@@ -53,11 +53,11 @@ User History
 
 ##### Fri, Dec 9
 - [x] Routes, CRUD and PSQL
-- [ ] Models
-- [ ] Read up on React Router
-- [ ] React Router
 
 ##### Sat, Dec 10
+- [ ] Models
+- [ ] React Router
+- [ ] Read up on React Router
 - [ ] Component Creation
 - [ ] Styling
 
