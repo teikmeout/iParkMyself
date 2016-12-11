@@ -16,11 +16,11 @@ function showAllUsers(req, res, next) {
 }
 
 function showOneUser(req, res, next) {
-  console.log('inside of /models/showOneUser');
+  // console.log('inside of /models/showOneUser');
   db.one(`
     SELECT *
     FROM users
-    WHERE username = $/id/`, req.params)
+    WHERE user_id = $/id/`, req.params)
     .then( user => {
       res.user = user;
       console.log('showOneUser data -->', user);
