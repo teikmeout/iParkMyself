@@ -27,6 +27,14 @@
   },
   "homepage": "https://github.com/teikmeout/project4#readme",
   "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.6.3",
+    "path": "^0.12.7",
+    "pg-promise": "^5.5.0"
+  },
+  "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.9",
@@ -35,18 +43,14 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.1",
-    "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.24.1",
     "html-webpack-template": "^5.5.0",
-    "morgan": "^1.7.0",
-    "path": "^0.12.7",
+    "file-loader": "^0.9.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.14.0"
-  },
-  "devDependencies": {}
+  }
 }

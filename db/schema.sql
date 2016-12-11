@@ -15,21 +15,6 @@ CREATE TABLE users (
 );
 
 CREATE TABLE leases (
-<<<<<<< Updated upstream
-  lease_id SERIAL NOT NULL,
-  user_id INT NOT NULL,
-  latitude VARCHAR NOT NULL,
-  longitude VARCHAR NOT NULL,
-  duration INT NOT NULL,
-  time_stuff timestamp NOT NULL
-);
-
-CREATE TABLE payments (
-  pay_id SERIAL NOT NULL,
-  user_id INT NOT NULL,
-  lease_id INT NOT NULL,
-  time_stuff timestamp NOT NULL
-=======
   lease_id SERIAL PRIMARY KEY NOT NULL,
   user_id INT NOT NULL references users(user_id),
   lat double precision NOT NULL,
@@ -43,7 +28,6 @@ CREATE TABLE payments (
   user_id INT NOT NULL references users(user_id),
   lease_id INT NOT NULL references leases(lease_id),
   hora timestamp NOT NULL DEFAULT now()
->>>>>>> Stashed changes
 );
 
 COMMIT;

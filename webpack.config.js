@@ -34,13 +34,13 @@ const config = {
     //   },
     // }),
     new HtmlWebpackPlugin({
-      title: 'reAsk',
+      title: 'iParkMySelf',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
       appMountId: 'root-container',
       scripts: [
-        "/socket.io/socket.io.js"
+        // "/socket.io/socket.io.js"
       ]
     }),
     new ExtractTextPlugin('/css/[name].css', {
