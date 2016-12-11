@@ -17,17 +17,33 @@ CREATE TABLE users (
 CREATE TABLE leases (
   lease_id SERIAL NOT NULL,
   user_id INT NOT NULL,
-  latitude VARCHAR NOT NULL,
-  longitude VARCHAR NOT NULL,
-  duration INT NOT NULL,
-  time_stuff timestamp NOT NULL
+  lat double precision NOT NULL,
+  long double precision NOT NULL,
+  dur INT NOT NULL,
+  hora timestamp NOT NULL DEFAULT now()
 );
 
 CREATE TABLE payments (
   pay_id SERIAL NOT NULL,
   user_id INT NOT NULL,
   lease_id INT NOT NULL,
-  time_stuff timestamp NOT NULL
+  hora timestamp NOT NULL DEFAULT now()
 );
+
+ALTER TABLE ONLY users
+ADD CONSTRAINT username_pkey PRIMARY KEY (user_id);
+
+ALTER TABLE ONLY leases
+ADD CONSTRAINT username_pkey PRIMARY KEY (lease_id);
+
+ALTER TABLE ONLY leases
+ADD CONSTRAINT username_pkey PRIMARY KEY (pay_id);
+
+ALTER TABLE ONLY leases
+ADD CONSTRAINT username_fkey FOREIGN KEY (user_id)
+REFERENCES users(user_id) On DELETE CASCADE;
+
+ALTER TABLE ONLY payments
+ADD CONSTRAINT username_
 
 COMMIT;

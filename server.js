@@ -1,5 +1,6 @@
 'use strict'
 
+require('dotenv').config({ silent: true });
 // requiring express
 const express = require('express');
 // intance of morgan for server logs
