@@ -3,6 +3,8 @@ import './App.css';
 
 // let's try our login modal
 import LoginModal from '../LoginModal/LoginModal.jsx';
+// trying signup modal
+import SignupModal from '../SignupModal/SignupModal.jsx';
 
 class App extends React.Component {
   // METHOD: constructor is our instance creator and holds the state creation process
@@ -21,7 +23,8 @@ class App extends React.Component {
     return(
       <div>
         {/*<h1>{this.state.truth}</h1>*/}
-        <LoginModal/>
+        {/*<LoginModal/>*/}
+        <SignupModal/>
       </div>
     )
   }

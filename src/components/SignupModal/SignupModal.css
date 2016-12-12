@@ -8,11 +8,11 @@
   justify-content: center;
 }
 
-.loginmodal {
+.signupmodal {
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-  height: 60vh;
+  height: 80vh;
   width: 40vh;
   display: flex;
   flex-direction: column;
@@ -22,32 +22,16 @@
   border-radius: 4px;
 }
 
-.inputContainer {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.logoContainer {
-  border-radius: 50%;
-  background-color: red;
-  height: 100px;
-  width: 100px;
-}
-
-.signinbtn {
+.signupnbtn {
   margin-top: 10px;
   border: none;
   border-radius: 2px;
 }
 
-
-
-.loginmodal input {
+.signupmodal input {
   background-color: darkslateblue;
   border-radius: 2px;
   border: none;
-  /*margin: .5vh;*/
+  margin: .5vh;
   /*box-shadow: ;*/
 }
