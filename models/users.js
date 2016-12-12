@@ -29,7 +29,23 @@ function showOneUser(req, res, next) {
     .catch(error => next(error));
 }
 
+function addOneUser(req, res, next) {
+  db.one(`
+    INSERT INTO users
+    (username, f_name, l_name, email, pass, type) VALUES
+    ($/username/, $/f_name/, $/l_name/, $/email/, $/pass/, '1')
+    RETURNING *;
+    `, req.body)
+  .then( newuser => {
+    res.newuser = newuser;
+    console.log('new user created -->', newuser);
+    next();
+  })
+  .catch(error => next(error));
+}
+
 module.exports = {
   showAllUsers,
-  showOneUser
+  showOneUser,
+  addOneUser
 };

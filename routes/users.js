@@ -2,7 +2,7 @@
 const express = require('express');
 // using the router instanciation
 const router = express.Router();
-const { showAllUsers,showOneUser } = require('../models/users');
+const { showAllUsers,showOneUser,addOneUser } = require('../models/users');
 
 // show user by ID
 router.get('/:id', showOneUser, (req, res) => {
@@ -23,7 +23,7 @@ router.get('/', showAllUsers, (req, res) => {
 })
 
 // post new user
-router.post('/', (req, res) => {
+router.post('/', addOneUser, (req, res) => {
   res.send('POST users route works');
 })
 
