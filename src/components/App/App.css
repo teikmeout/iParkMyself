@@ -1,0 +1,6 @@
+.backgroundApp {
+  height: 100vh;
+  width: 100vw;
+  background: url('../../public/parking.jpg') no-repeat center;
+  background-size: 100%;
+}

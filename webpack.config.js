@@ -54,6 +54,7 @@ const config = {
       // I'm pretty sure this is the CSS styling loader
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
       // checking for png gif and jpg files
+      // { test: /\.jpg$/, loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'},
       { test: /\.(png|gif|jpg)$/, loader: 'file-loader?name=/images/[name].[ext]' },
       // i'm not using svg's but Let's put this here
       { test: /\.svg$/, loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'},

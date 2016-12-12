@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import walphin from '../../public/parking.jpg';
 
 // let's try our login modal
 import LoginModal from '../LoginModal/LoginModal.jsx';
@@ -21,10 +22,9 @@ class App extends React.Component {
   // METHOD: render will finally throw stuff out to the hook
   render() {
     return(
-      <div>
-        {/*<h1>{this.state.truth}</h1>*/}
-        {/*<LoginModal/>*/}
-        <SignupModal/>
+      <div className="backgroundApp">
+        <LoginModal/>
+        {/*<SignupModal/>*/}
       </div>
     )
   }
