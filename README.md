@@ -56,22 +56,21 @@ User History
 
 ##### Sat, Dec 10
 - [x] Index.jsx and App.jsx static elements
-- [ ] Models
+
+##### Sun, Dec 11
+- [x] Models
+    - [x]  User Model CRUD
+- [x] Read up on React Router
 - [ ] React Router
-- [ ] Read up on React Router
 - [ ] Component Creation
 - [ ] Styling
 
-##### Sun, Dec 11
-- [ ] PSQL
-- [ ] Models
-
 ##### Mon, Dec 12
-- [ ] OCR
-- [ ] Amazon Web Services
 - [ ] More Stuff
 
 ##### Tue, Dec 11
+- [ ] OCR
+- [ ] Amazon Web Services
 - [ ] Even more Stuff
 
 ##### Wed, Dec 11
@@ -87,8 +86,8 @@ Tue Dec 6, 2016 | ☕☕☕☕☕☕ | | 🚬
 Wed Dec 7, 2016 | ☕☕☕☕☕ | | 🚬
 Thu Dec 8, 2016 | ☕☕☕☕ |⚡| 🚬
 Fri Dec 9, 2016 | ☕☕☕☕ | | 🚬🚬🚬
-Sat Dec 10, 2016 | ☕☕☕☕ | | 
-Sun Dec 11, 2016 | | | 
+Sat Dec 10, 2016 | ☕☕☕☕☕ | | 
+Sun Dec 11, 2016 | ☕☕☕☕|⚡|🚬
 Mon Dec 12, 2016 | | | 
 Tue Dec 13, 2016 | | | 
 Wed Dec 14, 2016 | | | 
