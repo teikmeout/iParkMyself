@@ -15,19 +15,16 @@ class SignupModal extends React.Component {
             <input
               type="text"
               placeholder="Name"
-              autocomplete="off"
               required="required"
             />
             <input
               type="text"
               placeholder="Last Name"
-              autocomplete="off"
               required="required"
             />
             <input
               type="email"
               placeholder="email"
-              autocomplete="off"
               required="required"
             />
             <input
@@ -38,7 +35,6 @@ class SignupModal extends React.Component {
             <input
               type="text"
               placeholder="Password"
-              autocomplete="off"
               required="required"
             />
           </div>

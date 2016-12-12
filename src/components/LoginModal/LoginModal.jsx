@@ -6,7 +6,7 @@ class LoginModal extends React.Component {
   render() {
     return(
       // hmmm does this break the code?
-      <div className="modal-brackground">
+      <div className="signin-modal-brackground">
         <div className="loginmodal">
         <div className="logoContainer"></div>
         <header>Log In</header>
@@ -20,11 +20,11 @@ class LoginModal extends React.Component {
             <input
               type="text"
               placeholder="Password"
-              autocomplete="off"
               required="required"
             />
           </div>
-          <button className="signinbtn">Sign In</button>
+          <button className="signinbtn">Log In</button>
+          <button className='signinbtn' onClick={this.props.toggleSignin}>Cancel</button>
         {/*end of loginmodal*/}
         </div>
       {/*end of modal-background*/}
