@@ -1,4 +1,5 @@
-.modal-brackground {
+.signin-modal-brackground {
+  /*display: none;*/
   background-color: rgba(2,2,2,.2);
   height: 100vh;
   width: 100vw;

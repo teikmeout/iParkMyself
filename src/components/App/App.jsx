@@ -19,12 +19,25 @@ class App extends React.Component {
 
   } // end of constructor method
 
+  toggleSignin(e) {
+    console.log('inside toggle');
+    let modal = document.querySelector('.signin-modal-brackground');
+    if (modal.style.display == "" || modal.style.display == 'none') {
+      modal.style.display = 'flex';
+    } else if (modal.style.display == 'flex') {
+      modal.style.display = 'none';
+    }
+  }
+        // <LoginModal
+        //   toggleSignin={event => this.toggleSignin(event)}
+        // />
+        // <SignupModal/>
+
   // METHOD: render will finally throw stuff out to the hook
   render() {
     return(
-      <div className="backgroundApp">
-        <LoginModal/>
-        {/*<SignupModal/>*/}
+      <div className="background-app">
+
       </div>
     )
   }
