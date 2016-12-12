@@ -61,10 +61,15 @@ const config = {
       // { test: /\.jpg$/, loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'},
       // testing for JS and JSX files
       {
+        test:   /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=100&mimetype=application/font-woff&name=/fonts/[name].[ext]',
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel',
       },
+      { test: /\.ico$/, loader: 'file-loader?name=/[name].[ext]' },
       {
         test: /\.otf(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader?name=/fonts/[name].[ext]'
