@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+// let's try our login modal
+import LoginModal from '../LoginModal/LoginModal.jsx';
+
 class App extends React.Component {
   // METHOD: constructor is our instance creator and holds the state creation process
   constructor() {
@@ -16,7 +19,10 @@ class App extends React.Component {
   // METHOD: render will finally throw stuff out to the hook
   render() {
     return(
-      <h1>{this.state.truth}</h1>
+      <div>
+        <h1>{this.state.truth}</h1>
+        <LoginModal/>
+      </div>
     )
   }
 
