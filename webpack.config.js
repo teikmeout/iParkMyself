@@ -38,7 +38,7 @@ const config = {
     new HtmlWebpackPlugin({
       title: 'iParkMySelf',
       xhtml: true,
-      inject: true,
+      inject: false,
       template: require('html-webpack-template'),
       appMountId: 'root-container',
       scripts: [
