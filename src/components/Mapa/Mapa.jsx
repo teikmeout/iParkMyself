@@ -6,7 +6,7 @@ class Mapa extends React.Component {
 
   render() {
     // creating a map container
-    const mapContainer = <div className="map-container"></div>
+    const mapContainer = <div className="mapa-container"></div>
 
     return(
       <GoogleMapLoader
@@ -14,7 +14,7 @@ class Mapa extends React.Component {
         googleMapElement = {
           <GoogleMap>
             defaultZoom={15}
-            defaultCenter={this.props.location}
+            defaultCenter={this.props.center}
             options={{streetViewControl: false, mapTypeControl: false}}
           </GoogleMap>
         }

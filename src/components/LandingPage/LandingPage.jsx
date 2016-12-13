@@ -11,17 +11,17 @@ class LandingPage extends React.Component {
         // </header>
 
   render() {
-    const location = [{
+    const newlocation = {
           lat: 40.739969664575234,
           lng: -73.98995369451217
-        }];
+        };
     return(
       <div className="landingpage-container">
         <Header/>
         <div className="map-flex">
           <h2>You are here!</h2>
           <section className="map-container">
-            <Mapa location={location}/>
+            <Mapa center={newlocation}/>
           </section>
         </div>
         <div className="parkbtn"></div>
