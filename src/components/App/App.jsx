@@ -61,7 +61,7 @@ class App extends React.Component {
               lng: position.coords.longitude
             }
           })
-          console.log(this.state.lat, this.state.lng);
+          console.log(this.state.center.lat, this.state.center.lng);
         });
     } else {
         display.innerHTML = "Geolocation is not supported by this browser.";
