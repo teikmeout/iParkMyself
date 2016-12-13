@@ -9,6 +9,8 @@ import LoginModal from '../LoginModal/LoginModal.jsx';
 import SignupModal from '../SignupModal/SignupModal.jsx';
 // checking landing page
 import LandingPage from '../LandingPage/LandingPage.jsx';
+// checking History
+import History from '../History/History.jsx';
 
 class App extends React.Component {
   // METHOD: constructor is our instance creator and holds the state creation process
@@ -35,11 +37,12 @@ class App extends React.Component {
         //   toggleSignin={event => this.toggleSignin(event)}
         // />
         // <SignupModal/>
+        // <LandingPage/>
 
   render() {
     return(
       <div className="background-app">
-        <LandingPage/>
+        <History/>
       </div>
     )
   }

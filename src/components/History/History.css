@@ -1,0 +1,56 @@
+.history-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.history-container h1 {
+  margin: 0;
+  padding: 0;
+  color: #FAFAFA;
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*align-items: space-around;*/
+  text-align: center;
+  display: block;
+}
+
+.history-map-container {
+  height: 70vh;
+  width: 40vw;
+  background-color: #FAFAFA;
+  float: left;
+}
+
+.input-container {
+  border: 2px solid red;
+  height: 70vh;
+  width: 30vw;
+  float: right;
+}
+
+.history-subcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*border: 3px solid green;*/
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-container input {
+  width: 50%;
+}
+
+.input-container button {
+  width: 50%;
+}
+
+.input-container select {
+  width: 50%;
+}
