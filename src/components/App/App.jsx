@@ -37,12 +37,12 @@ class App extends React.Component {
         //   toggleSignin={event => this.toggleSignin(event)}
         // />
         // <SignupModal/>
-        // <LandingPage/>
+        // <History/>
 
   render() {
     return(
       <div className="background-app">
-        <History/>
+        <LandingPage/>
       </div>
     )
   }
