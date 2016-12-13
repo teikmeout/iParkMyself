@@ -56,8 +56,10 @@ class App extends React.Component {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
           this.setState({
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
+            center: {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            }
           })
           console.log(this.state.lat, this.state.lng);
         });
