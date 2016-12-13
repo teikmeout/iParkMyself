@@ -58,9 +58,9 @@ class App extends React.Component {
   }
 
 
-  componentDidMount() {
-    this.getLocation();
-  }
+  // componentDidMount() {
+  //   this.getLocation();
+  // }
 
   toggleSignin(e) {
     console.log('inside toggle');
@@ -89,7 +89,6 @@ class App extends React.Component {
         <LandingPage
           // center={nicoLocation}
         />
-        <div className="catcher"></div>
       </div>
     )
   }
