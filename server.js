@@ -7,19 +7,24 @@ const express = require('express');
 const logger = require('morgan');
 // req path to get things done
 const path = require('path');
+// req body -parser cause I just had forgotten before
+const bodyParser = require('body-parser');
 
 // initializing an instance of express
 const app = express();
-// selecting options for morgan
-app.use(logger('dev'));
-
 // determining port config, heroku considerations
 const PORT = process.argv[2] || process.env.PORT || 3000;
+// setting the server to listen on PORT
+app.listen(PORT, () => console.log(`proyecturune on ${PORT}`))
+
 
 // app.use(express.static(path.join(__dirname, 'dist')));
 
-// setting the server to listen on PORT
-app.listen(PORT, () => console.log(`proyecturune on ${PORT}`))
+// selecting options for morgan
+app.use(logger('dev'));
+
+// giving out app the setting of bodyparser
+app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
