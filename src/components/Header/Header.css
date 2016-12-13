@@ -1,5 +1,21 @@
-header.component {
+.header-stuff {
   height: 10vh;
   width: 100vw;
   background-color: rgba(173,216,230,.2)
+}
+
+.header-stuff h4 {
+  display: block;
+  float: left;
+  margin-top: 4vh;
+  color: #FAFAFA;
+  margin-left: 2vw
+}
+
+.header-stuff h3 {
+  display: block;
+  float: right;
+  margin-top: 4vh;
+  margin-right: 2vw;
+  color: #FAFAFA;
 }

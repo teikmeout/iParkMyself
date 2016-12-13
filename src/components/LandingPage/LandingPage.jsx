@@ -1,16 +1,18 @@
 import React from 'react'
 import './LandingPage.css'
 // import pin from '../../public/pin.jpg';
+import Header from '../Header/Header.jsx';
 
 class LandingPage extends React.Component {
+        // <header>
+        //   <h4>@User</h4>
+        //   <h3>iParkMyself</h3>
+        // </header>
 
   render() {
     return(
       <div className="landingpage-container">
-        <header>
-          <h4>@User</h4>
-          <h3>iParkMyself</h3>
-        </header>
+        <Header/>
         <div className="map-flex">
           <h2>You are here!</h2>
           <section className="map-container">
