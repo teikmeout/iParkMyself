@@ -1,0 +1,54 @@
+.landingpage-container {
+  /*border: 10px solid red;*/
+  /*text-align: center;*/
+  height: 100vh;
+  width: 100vw;
+}
+.map-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.landingpage-container header {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(173,216,230,.2)
+}
+.landingpage-container h4 {
+  display: block;
+  float: left;
+  margin-top: 4vh;
+  color: #FAFAFA;
+  margin-left: 2vw
+}
+.landingpage-container h3 {
+  display: block;
+  float: right;
+  margin-top: 4vh;
+  margin-right: 2vw;
+  color: #FAFAFA;
+}
+
+.landingpage-container h2 {
+  display: block;
+  color: #FAFAFA;
+}
+.parkbtn {
+  position: absolute;
+  z-index: 500;
+  height: 100px;
+  width: 100px;
+  bottom: 10vh;
+  right: 20vw;
+  background: url('../../public/pin.png');
+  background-size: 100%;
+}
+
+.map-container {
+  background-color: #FAFAFA;
+  height: 60vh;
+  width: 80vw;
+}
+
