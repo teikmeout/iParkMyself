@@ -1,15 +1,38 @@
 // we need some react
 import React from 'react';
-// we need some reacDOM manipulation here
-import ReactDOM from 'react-dom';
+// deconstructing the react-dom npm and taking only the render method
+// old--> import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+
+// SOME AMAZING REACT ROUTER STUFF HERE
+// importing methods of router route and hashHistory from react-router
+// this is to avoid importing ALL OF react-router
+import { Router, Route, hashHistory } from 'react-router'
+
+
 // oh baby, App is our hook!
 import App from './components/App/App.jsx';
+// since we are using react-router might as well import the views that we need
+import History from './components/History/History.jsx';
+import LoginModal from './components/LoginModal/LoginModal.jsx';
+import SignupModal from './components/SignupModal/SignupModal.jsx';
+import LandingPage from './components/LandingPage/LandingPage.jsx';
+
 // css is shit with no normalize. so let's do this
 import './normalize.css';
 // some CSS hun, make it look good
 import './index.css';
 
-ReactDOM.render(
-  <App />,
+// <SignupModal/>
+
+// old--> ReactDOM.render(
+render(
+  // <App />,
+  <Router history={hashHistory}>
+    <Route path='/' component={App} />
+    <Route path='/pay' component={SignupModal} />
+    <Route path='/history' component={History} />
+
+  </Router>,
   document.querySelector('#root-container')
 );
