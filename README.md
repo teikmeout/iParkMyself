@@ -68,12 +68,13 @@ User History
 - [x] Google Maps API
 
 ##### Tue, Dec 11
+- [ ] Google Maps API in React
 - [ ] React Router
-- [ ] OCR
-- [ ] Amazon Web Services
 - [ ] Even more Stuff
 
 ##### Wed, Dec 11
+- [ ] ~~OCR~~
+- [ ] ~~Amazon Web Services~~
 - [ ] Burn the house down.
 
 
