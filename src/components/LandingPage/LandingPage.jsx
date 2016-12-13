@@ -11,10 +11,10 @@ class LandingPage extends React.Component {
         // </header>
 
   render() {
-    // const newlocation = {
-    //       lat: 40.739969664575234,
-    //       lng: -73.98995369451217
-    //     };
+    const newlocation = {
+          lat: 40.739969664575234,
+          lng: -73.98995369451217
+        };
             // <Mapa />
     return(
       <div className="landingpage-container">
