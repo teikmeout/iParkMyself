@@ -49,6 +49,10 @@
 
 .input-container button {
   width: 50%;
+  border: none;
+  border-radius: 4px;
+  background-color: firebrick;
+  color: #FAFAFA;
 }
 
 .input-container select {

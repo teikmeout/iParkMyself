@@ -9,6 +9,7 @@ class History extends React.Component {
         <h1>this stuff works</h1>
         <div className="history-subcontainer">
           <aside className="history-map-container">
+          map goes here
           </aside>
           <section className="input-container">
             {/* STATE INPUT*/}
