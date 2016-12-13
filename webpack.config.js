@@ -1,4 +1,5 @@
 'use strict'
+require('dotenv').config({ silent: true });
 // basic web pack require
 const webpack           = require('webpack');
 // path for correct file pointing
@@ -12,6 +13,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const BUILD_DIR         = path.resolve(__dirname, 'dist');
 const APP_DIR           = path.resolve(__dirname, 'src');
+const YOUR_API_KEY      = process.env.API_KEY;
 
 const config = {
   entry: `${APP_DIR}/index.jsx`,
@@ -36,11 +38,12 @@ const config = {
     new HtmlWebpackPlugin({
       title: 'iParkMySelf',
       xhtml: true,
-      inject: false,
+      inject: true,
       template: require('html-webpack-template'),
       appMountId: 'root-container',
       scripts: [
         // "/socket.io/socket.io.js"
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCzVkLA7e6e-kwBRasdSM90ZQif2NN64OA&callback=initMap"
       ]
     }),
     new ExtractTextPlugin('/css/[name].css', {
