@@ -33,15 +33,15 @@ User History
 - [x] Node.js
 - [x] Javascript
 - [x] Express.js
-- [ ] React.js
-- [ ] Heroku
-- [ ] React Router
+- [x] React.js
 - [x] WebPack
+- [ ] React Router
 - [ ] OCR (maybe overshooting)
+- [ ] Heroku
 
 ### Timeframe
 ##### Wed, Dec 7
-- [x] Hackathon
+- [x] Hackathon (why would they do this to us)
 
 ##### Thu, Dec 8
 - [x] Hackathon
@@ -61,14 +61,14 @@ User History
 - [x] Models
     - [x]  User Model CRUD
 - [x] Read up on React Router
-- [ ] React Router
-- [ ] Component Creation
-- [ ] Styling
 
 ##### Mon, Dec 12
-- [ ] More Stuff
+- [x] Component Creation
+- [x] Styling
+- [x] Google Maps API
 
 ##### Tue, Dec 11
+- [ ] React Router
 - [ ] OCR
 - [ ] Amazon Web Services
 - [ ] Even more Stuff
@@ -79,16 +79,16 @@ User History
 
 
 ###### Coffee Cups Consumed per day
-Day | Coffee | RedBull | Cigarettes
-:--- | :--- | :---: | :---
-Mon Dec 5, 2016 | ☕☕☕☕☕☕☕ | ⚡ | 🚬🚬🚬
-Tue Dec 6, 2016 | ☕☕☕☕☕☕ | | 🚬
-Wed Dec 7, 2016 | ☕☕☕☕☕ | | 🚬
-Thu Dec 8, 2016 | ☕☕☕☕ |⚡| 🚬
-Fri Dec 9, 2016 | ☕☕☕☕ | | 🚬🚬🚬
-Sat Dec 10, 2016 | ☕☕☕☕☕ | | 
-Sun Dec 11, 2016 | ☕☕☕☕|⚡|🚬
-Mon Dec 12, 2016 | | | 
-Tue Dec 13, 2016 | | | 
-Wed Dec 14, 2016 | | | 
+Day | Coffee | RedBull | Cigarettes | Beers
+:--- | :--- | :---: | :--- | :---
+Mon Dec 5, 2016 | ☕☕☕☕☕☕☕ | ⚡ | 🚬🚬🚬|
+Tue Dec 6, 2016 | ☕☕☕☕☕☕ | | 🚬|
+Wed Dec 7, 2016 | ☕☕☕☕☕ | | 🚬|
+Thu Dec 8, 2016 | ☕☕☕☕ |⚡| 🚬|
+Fri Dec 9, 2016 | ☕☕☕☕ | | 🚬🚬🚬|🍺
+Sat Dec 10, 2016 | ☕☕☕☕☕ | | |🍺
+Sun Dec 11, 2016 | ☕☕☕☕ |⚡|🚬|
+Mon Dec 12, 2016 | ☕☕☕☕ |⚡| 🚬🚬|🍺🍺
+Tue Dec 13, 2016 | | | |
+Wed Dec 14, 2016 | | | |
 
