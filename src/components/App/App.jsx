@@ -19,21 +19,13 @@ class App extends React.Component {
     // this is when we call thos properties and make them ours too
     super();
     this.state = {
-      truth: 'fuck yeah',
-      // center: {
-      //   lat: 0,
-      //   lng: 0
-      // }
+      center: {
+        lat: 0,
+        lng: 0
+      }
     }
 
   } // end of constructor method
-
-
-
-  // this is me having amazing hopes about this
-  initMap() {
-    console.log('initmap');
-  }
 
   showPosition(position) {
     console.log('inside showposition');
@@ -46,12 +38,29 @@ class App extends React.Component {
     display.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
   }
+  // THIS IS THE ORIGINAL
+  // getLocation() {
+  //   console.log('inside get location');
+  //   let display = document.querySelector('.catcher')
+  //   if (navigator.geolocation) {
+  //       navigator.geolocation.getCurrentPosition(this.showPosition.bind(this));
+  //   } else {
+  //       display.innerHTML = "Geolocation is not supported by this browser.";
+  //   }
+  // }
 
+  // THIS IS ME BEING HOPEFUL OF THIS SETTING STATE CORRECTLY
   getLocation() {
     console.log('inside get location');
     let display = document.querySelector('.catcher')
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(this.showPosition.bind(this));
+        navigator.geolocation.getCurrentPosition((position) => {
+          this.setState({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          })
+          console.log(this.state.lat, this.state.lng);
+        });
     } else {
         display.innerHTML = "Geolocation is not supported by this browser.";
     }
@@ -88,6 +97,7 @@ class App extends React.Component {
       <div className="background-app">
         <LandingPage
           // center={nicoLocation}
+          getLocation={this.getLocation.bind(this)}
         />
       </div>
     )
