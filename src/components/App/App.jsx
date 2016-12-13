@@ -24,6 +24,9 @@ class App extends React.Component {
 
   } // end of constructor method
 
+  // this is me having amazing hopes about this
+  initMap
+
   toggleSignin(e) {
     console.log('inside toggle');
     let modal = document.querySelector('.signin-modal-brackground');
