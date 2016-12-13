@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import '../../normalize.css'
 import walphin from '../../public/parking.jpg';
 
 // let's try our login modal
 import LoginModal from '../LoginModal/LoginModal.jsx';
 // trying signup modal
 import SignupModal from '../SignupModal/SignupModal.jsx';
+// checking landing page
+import LandingPage from '../LandingPage/LandingPage.jsx';
 
 class App extends React.Component {
   // METHOD: constructor is our instance creator and holds the state creation process
@@ -33,11 +36,10 @@ class App extends React.Component {
         // />
         // <SignupModal/>
 
-  // METHOD: render will finally throw stuff out to the hook
   render() {
     return(
       <div className="background-app">
-
+        <LandingPage/>
       </div>
     )
   }
