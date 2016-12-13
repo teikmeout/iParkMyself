@@ -20,10 +20,10 @@ class App extends React.Component {
     super();
     this.state = {
       truth: 'fuck yeah',
-      center: {
-        lat: 40.739969664575234,
-        lng: -73.98995369451217
-      }
+      // center: {
+      //   lat: 0,
+      //   lng: 0
+      // }
     }
 
   } // end of constructor method
@@ -38,6 +38,11 @@ class App extends React.Component {
   showPosition(position) {
     console.log('inside showposition');
     let display = document.querySelector('.catcher')
+    this.setState({
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      });
+     console.log('this is the setState --> ', this.state);
     display.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
   }
@@ -46,7 +51,7 @@ class App extends React.Component {
     console.log('inside get location');
     let display = document.querySelector('.catcher')
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(this.showPosition);
+        navigator.geolocation.getCurrentPosition(this.showPosition.bind(this));
     } else {
         display.innerHTML = "Geolocation is not supported by this browser.";
     }
@@ -73,10 +78,16 @@ class App extends React.Component {
         // <History/>
 
   render() {
+
+    // const nicoLocation = {
+    //   lat: 40.740066,
+    //   lng: -73.989682
+    // }
+
     return(
       <div className="background-app">
         <LandingPage
-          center={this.state.center}
+          // center={nicoLocation}
         />
         <div className="catcher"></div>
       </div>
