@@ -6,7 +6,7 @@ class History extends React.Component {
   render() {
     return(
       <div className="history-container">
-        <h1>this stuff works</h1>
+        <h1>Digital Parking Meter</h1>
         <div className="history-subcontainer">
           <aside className="history-map-container">
           map goes here
@@ -29,7 +29,7 @@ class History extends React.Component {
               <option value="15">15mins</option>
               <option value="30">30mins</option>
               <option value="60">1hr</option>
-              <option value="90">1 1/2hr</option>
+              <option value="90">1 1/2hrs</option>
               <option value="120">2hr</option>
             </select>
             {/* text area price display input*/}
