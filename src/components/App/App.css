@@ -4,3 +4,10 @@
   background: url('../../public/parking.jpg') no-repeat center;
   background-size: 100%;
 }
+
+.catcher {
+  color: #FAFAFA;
+  height: 200px;
+  width: 200px;
+  background-color: firebrick;
+}

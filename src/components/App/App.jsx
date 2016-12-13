@@ -19,13 +19,43 @@ class App extends React.Component {
     // this is when we call thos properties and make them ours too
     super();
     this.state = {
-      truth: 'fuck yeah'
+      truth: 'fuck yeah',
+      center: {
+        lat: 40.739969664575234,
+        lng: -73.98995369451217
+      }
     }
 
   } // end of constructor method
 
+
+
   // this is me having amazing hopes about this
-  initMap
+  initMap() {
+    console.log('initmap');
+  }
+
+  showPosition(position) {
+    console.log('inside showposition');
+    let display = document.querySelector('.catcher')
+    display.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+  }
+
+  getLocation() {
+    console.log('inside get location');
+    let display = document.querySelector('.catcher')
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(this.showPosition);
+    } else {
+        display.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+
+
+  componentDidMount() {
+    this.getLocation();
+  }
 
   toggleSignin(e) {
     console.log('inside toggle');
@@ -45,7 +75,10 @@ class App extends React.Component {
   render() {
     return(
       <div className="background-app">
-        <LandingPage/>
+        <LandingPage
+          center={this.state.center}
+        />
+        <div className="catcher"></div>
       </div>
     )
   }
