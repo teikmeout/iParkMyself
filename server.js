@@ -34,4 +34,4 @@ const usersRoute = require('./routes/users');
 const leasesRoute = require('./routes/leases');
 app.use('/users', usersRoute);
 app.use('/leases', leasesRoute);
-app.use('/', homeRoute);
+// app.use('/', homeRoute);
