@@ -45,7 +45,8 @@ const config = {
       appMountId: 'root-container',
       scripts: [
         // "/socket.io/socket.io.js"
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCzVkLA7e6e-kwBRasdSM90ZQif2NN64OA"
+        // "https://maps.googleapis.com/maps/api/js?key=AIzaSyCzVkLA7e6e-kwBRasdSM90ZQif2NN64OA"
+        "https://maps.googleapis.com/maps/api/js?visualization&key=AIzaSyCzVkLA7e6e-kwBRasdSM90ZQif2NN64OA”
         // &callback=initMap
       ]
     }),
