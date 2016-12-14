@@ -34,7 +34,7 @@ render(
       <Route path='/signup' component={SignupModal} />
       <Route path='/newlease' component={Newlease} />
       <Route
-        path='/home'
+        path='/'
         component={LandingPage}
       />
     </Route>
