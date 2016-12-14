@@ -68,9 +68,24 @@
   border-radius: 4px;
   background-color: firebrick;
   color: #FAFAFA;
+  /*margin-top: 20px;*/
 }
 
 .input-container select {
   width: 60%;
   height: 10%;
+}
+
+.input-container p {
+  display: block;
+  /*font-size: 10px;*/
+  padding: 0;
+}
+
+.small-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
