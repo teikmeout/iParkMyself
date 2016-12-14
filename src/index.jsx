@@ -29,10 +29,15 @@ import './index.css';
 render(
   // <App />,
   <Router history={hashHistory}>
-    <Route path='/' component={App} />
-    <Route path='/pay' component={SignupModal} />
-    <Route path='/newlease' component={Newlease} />
-
+    <Route path='/' component={App}>
+      <Route path='/login' component={LoginModal} />
+      <Route path='/signup' component={SignupModal} />
+      <Route path='/newlease' component={Newlease} />
+      <Route
+        path='/home'
+        component={LandingPage}
+      />
+    </Route>
   </Router>,
   document.querySelector('#root-container')
 );

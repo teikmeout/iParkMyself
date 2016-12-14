@@ -26,8 +26,8 @@ class LandingPage extends React.Component {
           <h2>You are here!</h2>
           <section className="map-container">
             <Mapa
-            center={this.props.center}
-            coordinates={this.props.coordinates}/>
+            center={newlocation}
+            coordinates={newlocation}/>
           </section>
         </div>
         <Link to="/Newlease"><div className="parkbtn" onClick={this.props.getLocation}></div></Link>
