@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../Header/Header.jsx';
 import './Newlease.css'
 
 class Newlease extends React.Component {
@@ -6,8 +7,8 @@ class Newlease extends React.Component {
   render() {
     return(
       <div className="background-app">
+        <Header/>
         <div className="history-container">
-          <h1>Digital Parking Meter</h1>
           <div className="history-subcontainer">
             <aside className="history-map-container">
             map goes here
