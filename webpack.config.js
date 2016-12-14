@@ -18,6 +18,7 @@ const YOUR_API_KEY      = process.env.API_KEY;
 const config = {
   // this is where we specify to take the input of our code
   entry: `${APP_DIR}/index.jsx`,
+  // this is where webpack will spit out our final file
   output: {
     path: BUILD_DIR,
     filename: '/js/[name].js',
