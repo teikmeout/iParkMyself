@@ -26,7 +26,7 @@ class LandingPage extends React.Component {
           <section className="map-container">
           </section>
         </div>
-        <Link to="/History"><div className="parkbtn" onClick={this.props.getLocation}></div></Link>
+        <Link to="/Newlease"><div className="parkbtn" onClick={this.props.getLocation}></div></Link>
       </div>
     )
   }

@@ -13,7 +13,7 @@ import { Router, Route, hashHistory } from 'react-router'
 // oh baby, App is our hook!
 import App from './components/App/App.jsx';
 // since we are using react-router might as well import the views that we need
-import History from './components/History/History.jsx';
+import Newlease from './components/Newlease/Newlease.jsx';
 import LoginModal from './components/LoginModal/LoginModal.jsx';
 import SignupModal from './components/SignupModal/SignupModal.jsx';
 import LandingPage from './components/LandingPage/LandingPage.jsx';
@@ -31,7 +31,7 @@ render(
   <Router history={hashHistory}>
     <Route path='/' component={App} />
     <Route path='/pay' component={SignupModal} />
-    <Route path='/history' component={History} />
+    <Route path='/newlease' component={Newlease} />
 
   </Router>,
   document.querySelector('#root-container')
