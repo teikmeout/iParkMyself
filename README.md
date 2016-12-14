@@ -35,7 +35,7 @@ User History
 - [x] Express.js
 - [x] React.js
 - [x] WebPack
-- [ ] React Router
+- [x] React Router
 - [ ] OCR (maybe overshooting)
 - [ ] Heroku
 
@@ -68,14 +68,15 @@ User History
 - [x] Google Maps API
 
 ##### Tue, Dec 11
-- [ ] Google Maps API in React
-- [ ] React Router
-- [ ] Even more Stuff
+- [x] Google Maps API in React
+- [x] React Router
 
 ##### Wed, Dec 11
 - [ ] ~~OCR~~
 - [ ] ~~Amazon Web Services~~
-- [ ] Burn the house down.
+- [ ] New Lease creation
+- [ ] pass state to children components
+- [x] Burn the house down.
 
 
 
@@ -90,6 +91,6 @@ Fri Dec 9, 2016 | ☕☕☕☕ | | 🚬🚬🚬|🍺
 Sat Dec 10, 2016 | ☕☕☕☕☕ | | |🍺
 Sun Dec 11, 2016 | ☕☕☕☕ |⚡|🚬|
 Mon Dec 12, 2016 | ☕☕☕☕ |⚡| 🚬🚬|🍺🍺
-Tue Dec 13, 2016 | | | |
-Wed Dec 14, 2016 | | | |
+Tue Dec 13, 2016 | ☕☕☕☕☕| | 🚬🚬🚬|🍺
+Wed Dec 14, 2016 | ☕| | 🚬🚬|
 
