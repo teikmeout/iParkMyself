@@ -16,6 +16,7 @@ const APP_DIR           = path.resolve(__dirname, 'src');
 const YOUR_API_KEY      = process.env.API_KEY;
 
 const config = {
+  // this is where we specify to take the input of our code
   entry: `${APP_DIR}/index.jsx`,
   output: {
     path: BUILD_DIR,
