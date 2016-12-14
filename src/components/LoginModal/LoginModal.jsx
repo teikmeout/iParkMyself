@@ -3,6 +3,12 @@ import './LoginModal.css'
 
 class LoginModal extends React.Component {
 
+  switchToSignup() {
+    const loginmodal = document.querySelector('#signin-modal-brackground');
+    const signupmodal = document.querySelector('#modal-brackground');
+
+  }
+
   render() {
     return(
       // hmmm does this break the code?
