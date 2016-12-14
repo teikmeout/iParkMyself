@@ -99,14 +99,15 @@ class App extends React.Component {
     // }
         // <LoginModal/>
 
-    return(
-      <div className="background-app">
-        <LandingPage
+        /*<LandingPage
           // center={nicoLocation}
           getLocation={this.getLocation.bind(this)}
           center={this.state.center}
           coordinates={this.state.coordinates}
-        />
+        />*/
+    return(
+      <div className="background-app">
+       {this.props.children}
       </div>
     )
   }

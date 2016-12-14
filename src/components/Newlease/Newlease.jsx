@@ -6,13 +6,20 @@ import './Newlease.css'
 class Newlease extends React.Component {
 
   render() {
+  const newlocation = {
+          lat: 40.739969664575234,
+          lng: -73.98995369451217
+        };
     return(
       <div className="background-app">
         <Header/>
         <div className="history-container">
           <div className="history-subcontainer">
             <aside className="history-map-container">
-              <Mapa />
+              <Mapa
+                center={newlocation}
+                coordinates={newlocation}
+              />
             </aside>
             <section className="input-container">
               {/* STATE INPUT*/}

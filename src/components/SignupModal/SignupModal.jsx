@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import './SignupModal.css'
 
 class SignupModal extends React.Component {
@@ -38,7 +39,7 @@ class SignupModal extends React.Component {
               required="required"
             />
           </div>
-          <button className="signupnbtn">Sign Up</button>
+          <Link to="/home"><button className="signupnbtn">Sign Up</button></Link>
         {/*end of loginmodal*/}
         </div>
       {/*end of modal-background*/}
