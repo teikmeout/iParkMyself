@@ -1,4 +1,6 @@
 import React from 'react'
+// in order for Link to work correctly you need the Link method of react-router
+import { Link } from 'react-router'
 import './LandingPage.css'
 // import pin from '../../public/pin.jpg';
 import Header from '../Header/Header.jsx';
@@ -24,7 +26,7 @@ class LandingPage extends React.Component {
           <section className="map-container">
           </section>
         </div>
-        <div className="parkbtn" onClick={this.props.getLocation}></div>
+        <Link to="/History"><div className="parkbtn" onClick={this.props.getLocation}></div></Link>
       </div>
     )
   }
