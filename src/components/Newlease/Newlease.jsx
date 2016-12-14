@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header.jsx';
+import Mapa from '../Mapa/Mapa.jsx';
 import './Newlease.css'
 
 class Newlease extends React.Component {
@@ -11,7 +12,7 @@ class Newlease extends React.Component {
         <div className="history-container">
           <div className="history-subcontainer">
             <aside className="history-map-container">
-            map goes here
+              <Mapa />
             </aside>
             <section className="input-container">
               {/* STATE INPUT*/}

@@ -19,8 +19,12 @@ class App extends React.Component {
     super();
     this.state = {
       center: {
-        lat: 0,
-        lng: 0
+        lat: 40.7399943,
+        lng: -73.9896909
+      },
+      coordinates: {
+        lat: 40.7399943,
+        lng: -73.9896909
       }
     }
 
@@ -93,12 +97,15 @@ class App extends React.Component {
     //   lat: 40.740066,
     //   lng: -73.989682
     // }
+        // <LoginModal/>
 
     return(
       <div className="background-app">
         <LandingPage
           // center={nicoLocation}
           getLocation={this.getLocation.bind(this)}
+          center={this.state.center}
+          coordinates={this.state.coordinates}
         />
       </div>
     )
