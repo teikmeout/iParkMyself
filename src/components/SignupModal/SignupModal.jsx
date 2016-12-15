@@ -62,6 +62,24 @@ class SignupModal extends React.Component {
     } // end of switch statemtnt
   }// end of handle input
 
+  // METHOD: takes the state and transforms an object that will be used for a POST method
+  // args: all inside state
+  handleData() {
+    // select the things where the data is
+    // basically stuff in our local state at this point
+    let payload = {
+      username: this.state.inputUsername,
+      f_name: this.state.inputName,
+      l_name: this.state.inputLast,
+      email: this.state.inputEmail,
+      pass: this.state.inputPassword,
+      type: 0
+    }
+    // type: 0 equals non admin
+
+
+  }
+
   render() {
     return(
       // hmmm does this break the code?
