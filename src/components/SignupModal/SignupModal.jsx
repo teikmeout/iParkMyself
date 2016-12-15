@@ -77,6 +77,8 @@ class SignupModal extends React.Component {
     }
     // type: 0 equals non admin
 
+    // time to get some headers ready
+
 
   }
 
