@@ -77,7 +77,15 @@ class SignupModal extends React.Component {
     }
     // type: 0 equals non admin
 
-    // time to get some headers ready
+    //fetch call to DB for a new post on users
+    fetch('/users', {
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    method: 'POST',
+    body: JSON.stringify(payload)
+    })
+    .then()
 
 
   }
