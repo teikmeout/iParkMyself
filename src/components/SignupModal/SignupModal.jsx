@@ -26,14 +26,13 @@ class SignupModal extends React.Component {
   // }
 
   handleInput(event) {
-    console.log(' stuff -->> ', event.target.value)
-    debugger;
     event.target.id
-    switch(event.target.placeholder) {
+    switch(event.target.id) {
       case "name": {
         this.setState({
           inputName: event.target.value
         })
+        console.log(this.state.inputName);
         break;
       }
       case "last": {

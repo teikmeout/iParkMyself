@@ -70,11 +70,9 @@ class App extends React.Component {
         display.innerHTML = "Geolocation is not supported by this browser.";
     }
   }
+  // I want to see if I can get the location on load
+  // and then change the state of the pin
 
-
-  // componentDidMount() {
-  //   this.getLocation();
-  // }
 
   toggleSignin(e) {
     console.log('inside toggle');
@@ -85,26 +83,8 @@ class App extends React.Component {
       modal.style.display = 'none';
     }
   }
-        // <LoginModal
-        //   toggleSignin={event => this.toggleSignin(event)}
-        // />
-        // <SignupModal/>
-        // <History/>
 
   render() {
-
-    // const nicoLocation = {
-    //   lat: 40.740066,
-    //   lng: -73.989682
-    // }
-        // <LoginModal/>
-
-        /*<LandingPage
-          // center={nicoLocation}
-          getLocation={this.getLocation.bind(this)}
-          center={this.state.center}
-          coordinates={this.state.coordinates}
-        />*/
     return(
       <div className="background-app">
        {this.props.children}

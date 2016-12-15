@@ -8,7 +8,7 @@ class Header extends React.Component {
   render() {
     return(
         <header className="header-stuff">
-          <h4>@User</h4>
+          <Link to='/Signup'><h4>@User</h4></Link>
           <Link to='/'><h3>iParkMyself</h3></Link>
         </header>
     )
