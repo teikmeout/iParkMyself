@@ -85,7 +85,8 @@ class SignupModal extends React.Component {
     method: 'POST',
     body: JSON.stringify(payload)
     })
-    .then()
+    .then(() => console.log('yeah'))
+    .catch(err => console.log(err))
 
 
   }

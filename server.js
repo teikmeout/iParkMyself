@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // setting up routes
-const homeRoute = require('./routes/home');
+// const homeRoute = require('./routes/home');
 const usersRoute = require('./routes/users');
 const leasesRoute = require('./routes/leases');
 app.use('/users', usersRoute);

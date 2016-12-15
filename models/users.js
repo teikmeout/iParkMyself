@@ -2,13 +2,13 @@
 const db = require('./db.js');
 
 function showAllUsers(req, res, next) {
-  console.log('inside of /models/showAllUsers');
-  db.any(`
+  console.log('===>> inside of /models/showAllUsers');
+  db.many(`
     SELECT *
     FROM users;
   `)
   .then( data => {
-    res.users = data;
+    res.usuarios = data;
     console.log('showAllUsers data -->', data);
     next();
   })
