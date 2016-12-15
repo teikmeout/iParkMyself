@@ -30,8 +30,9 @@ class LoginModal extends React.Component {
               required="required"
             />
           </div>
-          <button className="signinbtn">Log In</button>
-          <button className='signinbtn' onClick={this.props.toggleSignin}>Cancel</button>
+          <Link to={'/'}><button className="signinbtn">Log In</button></Link>
+          <Link><button className='signinbtn' onClick={this.props.toggleSignin}>Cancel</button></Link>
+          <Link to={'/'}><p className="signinbtn">Sign Up</p></Link>
         {/*end of loginmodal*/}
         </div>
       {/*end of modal-background*/}
