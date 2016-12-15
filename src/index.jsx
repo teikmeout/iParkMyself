@@ -7,7 +7,7 @@ import {render} from 'react-dom';
 // SOME AMAZING REACT ROUTER STUFF HERE
 // importing methods of router route and hashHistory from react-router
 // this is to avoid importing ALL OF react-router
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 
 // oh baby, App is our hook!
@@ -28,15 +28,12 @@ import './index.css';
 // old--> ReactDOM.render(
 render(
   // <App />,
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path='/' component={App}>
+      <IndexRoute component={LandingPage}/>
       <Route path='/login' component={LoginModal} />
       <Route path='/signup' component={SignupModal} />
       <Route path='/newlease' component={Newlease} />
-      <Route
-        path='/'
-        component={LandingPage}
-      />
     </Route>
   </Router>,
   document.querySelector('#root-container')
