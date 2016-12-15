@@ -75,26 +75,36 @@ class SignupModal extends React.Component {
               type="text"
               placeholder="Name"
               required="required"
+              id="name"
+              onChange={(event) => this.handleInput(event)}
             />
             <input
               type="text"
               placeholder="Last Name"
               required="required"
+              id="last"
+              onChange={(event) => this.handleInput(event)}
             />
             <input
               type="email"
               placeholder="email"
               required="required"
+              id="email"
+              onChange={(event) => this.handleInput(event)}
             />
             <input
               type="text"
               placeholder="Username"
               required="required"
+              id="username"
+              onChange={(event) => this.handleInput(event)}
             />
             <input
               type="text"
               placeholder="Password"
               required="required"
+              id="pass"
+              onChange={(event) => this.handleInput(event)}
             />
           </div>
           <Link to="/home"><button className="signupnbtn">Sign Up</button></Link>
