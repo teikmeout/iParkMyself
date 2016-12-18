@@ -26,7 +26,6 @@ class SignupModal extends React.Component {
   // }
 
   handleInput(event) {
-    event.target.id
     switch(event.target.id) {
       case "name": {
         this.setState({

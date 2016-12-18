@@ -10,6 +10,27 @@ class LoginModal extends React.Component {
 
   }
 
+  // I don't knwo how to use react-router yet.
+  // I'm writting my functions here in every place since I can't
+  // do dry code and keep it in App
+  handleInput(event) {
+    switch(event.target.id) {
+      case "username": {
+        this.setState({
+          inputUsername: event.target.value
+        })
+        console.log(this.state.inputUsername);
+        break;
+      }
+      case "pass": {
+        this.setState({
+          inputPassword: event.target.value
+        })
+        break;
+      }
+    } // end of switch statemtnt
+  }// end of handle input
+
   render() {
     return(
       // hmmm does this break the code?
@@ -23,11 +44,15 @@ class LoginModal extends React.Component {
               type="text"
               placeholder="Username"
               required="required"
+              id="username"
+              onChange={(event) => this.handleInput(event)}
             /> <br />
             <input
               type="text"
               placeholder="Password"
               required="required"
+              id="pass"
+              onChange={(event) => this.handleInput(event)}
             />
           </div>
           <Link to={'/'}><button className="signinbtn">Log In</button></Link>

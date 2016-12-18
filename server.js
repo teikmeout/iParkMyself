@@ -23,7 +23,7 @@ app.listen(PORT, () => console.log(`proyecturune on ${PORT}`))
 // selecting options for morgan
 app.use(logger('dev'));
 
-// giving out app the setting of bodyparser
+// giving out app the setting of bodyparser to only take json
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'dist')));

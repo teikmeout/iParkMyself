@@ -30,7 +30,7 @@ render(
   // <App />,
   <Router history={browserHistory}>
     <Route path='/' component={App}>
-      <IndexRoute component={LandingPage}/>
+      <IndexRoute path='/' component={LandingPage}/>
       <Route path='/login' component={LoginModal} />
       <Route path='/signup' component={SignupModal} />
       <Route path='/newlease' component={Newlease} />
