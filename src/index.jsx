@@ -4,10 +4,12 @@ import React from 'react';
 // old--> import ReactDOM from 'react-dom';
 import {render} from 'react-dom';
 
+import rutas from './routes.jsx';
+
 // SOME AMAZING REACT ROUTER STUFF HERE
 // importing methods of router route and hashHistory from react-router
 // this is to avoid importing ALL OF react-router
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 
 // oh baby, App is our hook!
@@ -23,18 +25,14 @@ import './normalize.css';
 // some CSS hun, make it look good
 import './index.css';
 
-// <SignupModal/>
 
 // old--> ReactDOM.render(
 render(
-  // <App />,
-  <Router history={browserHistory}>
-    <Route path='/' component={App}>
-      <IndexRoute path='/' component={LandingPage}/>
-      <Route path='/login' component={LoginModal} />
-      <Route path='/signup' component={SignupModal} />
-      <Route path='/newlease' component={Newlease} />
-    </Route>
-  </Router>,
+  <Router history={hashHistory} routes={rutas}/>,
   document.querySelector('#root-container')
 );
+
+
+// again, thanks to bcrypt bill for this info
+// you tha man, my gandalf
+// @williammayo11 in github
