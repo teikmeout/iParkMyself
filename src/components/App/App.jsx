@@ -41,16 +41,6 @@ class App extends React.Component {
     display.innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
   }
-  // THIS IS THE ORIGINAL
-  // getLocation() {
-  //   console.log('inside get location');
-  //   let display = document.querySelector('.catcher')
-  //   if (navigator.geolocation) {
-  //       navigator.geolocation.getCurrentPosition(this.showPosition.bind(this));
-  //   } else {
-  //       display.innerHTML = "Geolocation is not supported by this browser.";
-  //   }
-  // }
 
   // THIS IS ME BEING HOPEFUL OF THIS SETTING STATE CORRECTLY
   getLocation() {
@@ -87,7 +77,12 @@ class App extends React.Component {
   render() {
     return(
       <div className="background-app">
-       {this.props.children}
+        {this.props.children && React.cloneElement(this.props.children, {
+          center: this.state.center,
+          coordinates: this.state.coordinates,
+          getLocation: () => this.getLocation(),
+          toggleSignin: () => this.toggleSignin,
+        })}
       </div>
     )
   }

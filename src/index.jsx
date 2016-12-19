@@ -9,7 +9,7 @@ import rutas from './routes.jsx';
 // SOME AMAZING REACT ROUTER STUFF HERE
 // importing methods of router route and hashHistory from react-router
 // this is to avoid importing ALL OF react-router
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 
 // oh baby, App is our hook!
@@ -28,7 +28,7 @@ import './index.css';
 
 // old--> ReactDOM.render(
 render(
-  <Router history={hashHistory} routes={rutas}/>,
+  <Router history={browserHistory} routes={rutas}/>,
   document.querySelector('#root-container')
 );
 
