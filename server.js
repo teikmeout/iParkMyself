@@ -35,3 +35,12 @@ const leasesRoute = require('./routes/leases');
 app.use('/users', usersRoute);
 app.use('/leases', leasesRoute);
 // app.use('/', homeRoute);
+
+// handle every other route with index.html, which will contain
+// a script tag to your application's JavaScript file(s).
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+})
+
+//^^ this part was taken from
+// https://github.com/ReactTraining/react-router/blob/master/docs/guides/Histories.md#browserhistory
