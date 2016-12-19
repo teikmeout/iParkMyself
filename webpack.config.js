@@ -1,5 +1,6 @@
 'use strict'
-require('dotenv').config({ silent: true });
+// require('dotenv').config({ silent: true });
+if (process.env.NODE_ENV == 'development') require('dotenv').config({ silent: true });
 // basic web pack require
 const webpack           = require('webpack');
 // path for correct file pointing
@@ -21,7 +22,10 @@ const config = {
   // this is where webpack will spit out our final file
   output: {
     path: BUILD_DIR,
-    filename: '/js/[name].js',
+    // had to modify 'js/[name].js' to this since it was duplicating the //
+    filename: 'js/[name].js',
+    // this was to make default filepath to fall into '/'
+    // publicPath: '/'
   },
   cache: true,
   debug: true,
@@ -50,7 +54,7 @@ const config = {
         // &callback=initMap
       ]
     }),
-    new ExtractTextPlugin('/css/[name].css', {
+    new ExtractTextPlugin('css/[name].css', {
       allChunks: true
     })
   ],
