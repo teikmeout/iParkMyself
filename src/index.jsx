@@ -12,13 +12,13 @@ import rutas from './routes.jsx';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 
-// oh baby, App is our hook!
-import App from './components/App/App.jsx';
-// since we are using react-router might as well import the views that we need
-import Newlease from './components/Newlease/Newlease.jsx';
-import LoginModal from './components/LoginModal/LoginModal.jsx';
-import SignupModal from './components/SignupModal/SignupModal.jsx';
-import LandingPage from './components/LandingPage/LandingPage.jsx';
+// // oh baby, App is our hook!
+// import App from './components/App/App.jsx';
+// // since we are using react-router might as well import the views that we need
+// import Newlease from './components/Newlease/Newlease.jsx';
+// import LoginModal from './components/LoginModal/LoginModal.jsx';
+// import SignupModal from './components/SignupModal/SignupModal.jsx';
+// import LandingPage from './components/LandingPage/LandingPage.jsx';
 
 // css is shit with no normalize. so let's do this
 import './normalize.css';

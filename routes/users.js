@@ -18,7 +18,8 @@ router.put('/:id', (req, res) => {
 
 // get All users
 router.get('/', showAllUsers, (req, res) => {
-  res.json(res.users);
+// router.get('/', (req, res) => {
+  res.json(res.usuarios);
   // res.send('get All users works');
 })
 

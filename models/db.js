@@ -1,6 +1,7 @@
 // starting a new instace of pg promise for psql DB connection
 // note that we are doing this helper file inside of models to
 // have access to it on Heroku deployment
+require('dotenv').config();
 const pgp = require('pg-promise')();
 
 const config = process.env.DATABASE_URL || {
@@ -14,4 +15,5 @@ const config = process.env.DATABASE_URL || {
 // instanciating pgp with the correct config and exporting it
 const db = pgp(config);
 
+// sending this out
 module.exports = db;
